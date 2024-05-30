@@ -18,3 +18,7 @@ Prompts based on juniors to OpenAI
 Recommend a text prompt like VScode
 eg: there is a syntax error.
 Prompts based on seniors OpenAI 
+
+## Common for both:
+- visual representation of students' grades, strong zones and improvement areas using lib such matplotlib, plotly, etc.
+
