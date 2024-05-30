@@ -10,17 +10,15 @@ def evaluate_code(code, api_key):
 
     # Prompt construction for code evaluation
     prompt = f"""
-    Please act as a code evaluator. Evaluate the following code snippet based on four criteria: Correctness, Style, Efficiency, and Error Handling. 
+    Hey there! Can you take a look at this code and tell me how good it is? We're going to check four things:
 
-    For each criterion, provide a detailed analysis and a score from 1 to 10, where 1 is the lowest and 10 is the highest. 
+    1. Does it work right?
+    2. Is it written nicely and easy to read?
+    3. Does it run fast without using too much memory?
+    4. Does it handle mistakes well, like when something unexpected happens?
+    For each thing, give it a score from 1 to 10, where 1 is the worst and 10 is the best. Also, explain why you gave that score.
 
-    The criteria are defined as follows:
-    1. Correctness: Does the code achieve its intended purpose correctly?
-    2. Style: Does the code follow good programming practices and conventions, including naming conventions, indentation, and comments?
-    3. Efficiency: Is the code optimized for performance, considering time and space complexity?
-    4. Error Handling: Does the code handle potential errors and edge cases appropriately?
-
-    Here is the code snippet:
+    Here's the code:
     {code}
     """
     # Send the prompt to OpenAI
